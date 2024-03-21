@@ -1,0 +1,15 @@
+from random import randint
+
+
+class Bingo:
+    def __init__(self,x):
+        self._numBolas = x  
+        self._bolas = []
+
+    def set_numBolas(self,x):
+        self._numBolas = x
+    
+    def Proximo(self): 
+        x = randint(1,self._numBolas)
+        for i in self._bolas:
+            
