@@ -1,0 +1,15 @@
+/workspaces/POO/C#/Exercicios/E02/bin/Debug/net8.0/E02
+/workspaces/POO/C#/Exercicios/E02/bin/Debug/net8.0/E02.deps.json
+/workspaces/POO/C#/Exercicios/E02/bin/Debug/net8.0/E02.runtimeconfig.json
+/workspaces/POO/C#/Exercicios/E02/bin/Debug/net8.0/E02.dll
+/workspaces/POO/C#/Exercicios/E02/bin/Debug/net8.0/E02.pdb
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/E02.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/E02.AssemblyInfoInputs.cache
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/E02.AssemblyInfo.cs
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/E02.csproj.CoreCompileInputs.cache
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/E02.sourcelink.json
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/E02.dll
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/refint/E02.dll
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/E02.pdb
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/E02.genruntimeconfig.cache
+/workspaces/POO/C#/Exercicios/E02/obj/Debug/net8.0/ref/E02.dll

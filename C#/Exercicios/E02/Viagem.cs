@@ -10,7 +10,14 @@ class Viagem {
         if(x >= 0) t = x;
         else throw new ArgumentOutOfRangeException();
     }
+
+    public double GetTempo(){
+        return t;
+    }
+    public double GetDist(){
+        return d;
+        }
     public double Calc_velo(){
         return d/(t/60);
     }
-}
+}   
