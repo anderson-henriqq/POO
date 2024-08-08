@@ -7,17 +7,16 @@ class Cliente:
         self._nome = n
         self._email = e
         self._fone = f
-        if not isinstance(id, int): raise ValueError("ID invalido")
-        if (id <= 0): raise ValueError("ID invalido")
+        if not isinstance(id, int): raise ValueError("ID inválido")
+        if (id <= 0): raise ValueError("ID inválido")
         if (n == ""): raise ValueError("O campo nome precisa ser preenchido") 
         if (e == ""): raise ValueError("O campo e-mail precisa ser preenchido") 
         if (f == ""): raise ValueError("O campo fone precisa ser preenchido")
     
     def __str__(self):
-        return f"{self._id}{self._nome}{self._email}{self._fone}"
+        return f"{self._id} - Nome: {self._nome}, E-mail: {self._email}, Telefone: {self._fone}"
 
-    def set_id(self,id):
-        if not isinstance(id, int): raise ValueError("ID invalido")
+    def set_id(self, id):
         if (id <= 0): raise ValueError("ID invalido")
         self._id = id
     
