@@ -17,7 +17,6 @@ class Cliente:
         return f"{self._id}{self._nome}{self._email}{self._fone}"
 
     def set_id(self,id):
-        if not isinstance(id, int): raise ValueError("ID invalido")
         if (id <= 0): raise ValueError("ID invalido")
         self._id = id
     
@@ -117,10 +116,63 @@ class VendaItem:
     def __str__(self):
         return f"VendaItem [ID: {self.__id}, Qtd: {self.__qtd}, Preço: {self.__preco}, ID Venda: {self.__idVenda}]"
 
-
-
 class Produto:
     
     def __init__(self, id, d, p, e):
         self._id = id
-        
+        self._descricao = d     
+        self._preco = p
+        self._estoque = e
+        self._idCategoria = Categoria.get_id()
+    
+    def get_id(self):
+        return self.__id
+
+    def get_descricao(self):
+        return self.__descricao
+
+    def get_preco(self):
+        return self.__preco
+
+    def get_estoque(self):
+        return self.__estoque
+
+    def get_idCategoria(self):
+        return self.__idCategoria
+
+    def set_descricao(self, descricao):
+        self.__descricao = descricao
+
+    def set_preco(self, preco):
+        self.__preco = preco
+
+    def set_estoque(self, estoque):
+        self.__estoque = estoque
+
+    def set_idCategoria(self, categoria):
+        self.__idCategoria = categoria.get_id()
+
+    def __str__(self):
+        return f"Produto [ID: {self.__id}, Descrição: {self.__descricao}, Preço: {self.__preco}, Estoque: {self.__estoque}, Categoria ID: {self.__idCategoria}]"
+
+class Categoria:
+
+    def __init__(self, id, d):
+        self._id = id
+        self._descricao = d
+    
+    def get_id(self):
+        return self.__id
+
+    def get_descricao(self):
+        return self.__descricao
+
+    def set_descricao(self, descricao):
+        self.__descricao = descricao
+
+    def __str__(self):
+        return f"Categoria [ID: {self.__id}, Descrição: {self.__descricao}]"
+
+    
+
+
