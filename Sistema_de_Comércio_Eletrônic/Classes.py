@@ -47,8 +47,80 @@ class Cliente:
     
 class Venda:
 
-    def __init__(self,id, d, c,t):
+    def __init__(self, id):
         self._id = id
-        self._data = d
-        self._carrinho = c
-        self._total = t
+        self._data = self._data
+        self._carrinho = self._carrinho
+        self._total = self._total
+        self._idCliente = Cliente.get_id()
+    
+    def get_id(self):
+        return self.__id
+
+    def get_data(self):
+        return self.__data
+
+    def get_carrinho(self):
+        return self.__carrinho
+
+    def get_total(self):
+        return self.__total
+
+    def get_idCliente(self):
+        return self.__idCliente
+    
+    def set_data(self, data):
+        self.__data = data
+
+    def set_carrinho(self, carrinho):
+        self.__carrinho = carrinho
+
+    def set_total(self, total):
+        self.__total = total
+
+    def set_idCliente(self, cliente):
+        self.__idCliente = cliente.get_id()
+
+    def __str__(self):
+        return f"Venda [ID: {self.__id}, Data: {self.__data}, Total: {self.__total}, Cliente ID: {self.__idCliente}]"
+
+class VendaItem:
+
+    def __init__(self, id, q, p):
+        self._id = id
+        self._qtd = q
+        self._preco = p
+        self._idVenda = Venda.get_id()
+        self._idProduto = Produto.get_id() 
+    
+    def get_id(self):
+        return self.__id
+
+    def get_qtd(self):
+        return self.__qtd
+
+    def get_preco(self):
+        return self.__preco
+
+    def get_idVenda(self):
+        return self.__idVenda
+    
+    def set_qtd(self, qtd):
+        self.__qtd = qtd
+
+    def set_preco(self, preco):
+        self.__preco = preco
+
+    def set_idVenda(self, venda):
+        self.__idVenda = venda.get_id()
+
+    def __str__(self):
+        return f"VendaItem [ID: {self.__id}, Qtd: {self.__qtd}, Preço: {self.__preco}, ID Venda: {self.__idVenda}]"
+
+
+
+class Produto:
+    
+    def __init__(self, id, d, p, e):
+        self._id = id
+        
