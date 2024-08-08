@@ -1,3 +1,5 @@
+import datetime
+
 class Cliente:
     
     def __init__(self, id, n, e, f):
@@ -43,3 +45,10 @@ class Cliente:
     def get_fone(self):
         return self._fone
     
+class Venda:
+
+    def __init__(self,id, d, c,t):
+        self._id = id
+        self._data = d
+        self._carrinho = c
+        self._total = t
