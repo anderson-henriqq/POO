@@ -172,7 +172,7 @@ class Categoria:
         self.__descricao = descricao
 
     def __str__(self):
-        return f"Categoria [ID: {self.__id}, Descrição: {self.__descricao}]"
+        return f"Categoria [ID: {self.__id}, Descrição: {self.__descricao}]" #teste
 
     
 
