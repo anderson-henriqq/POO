@@ -3,25 +3,25 @@ import datetime
 class Cliente:
     
     def __init__(self, id, n, e, f):
-        self._id = id
-        self._nome = n
-        self._email = e
-        self._fone = f
-        if not isinstance(id, int): raise ValueError("ID inválido")
-        if (id <= 0): raise ValueError("ID inválido")
-        if (n == ""): raise ValueError("O campo nome precisa ser preenchido") 
-        if (e == ""): raise ValueError("O campo e-mail precisa ser preenchido") 
-        if (f == ""): raise ValueError("O campo fone precisa ser preenchido")
+        self.__id = id
+        self.__nome = n
+        self.__email = e
+        self.__fone = f
+        if not isinstance(id, int): raise ValueError("\nO ID não é um valor inteiro.")
+        if (id <= 0): raise ValueError("\nID inválido, informe outro número.")
+        if (n == ""): raise ValueError("\nO campo nome precisa ser preenchido")
+        if (e == ""): raise ValueError("\nO campo e-mail precisa ser preenchido") 
+        if (f == ""): raise ValueError("\nO campo Telefone precisa ser preenchido")
     
     def __str__(self):
-        return f"{self._id} - Nome: {self._nome}, E-mail: {self._email}, Telefone: {self._fone}"
+        return f"ID nº {self._id}\n\tNome do cliente: {self._nome}\n\tE-mail: {self._email}\n\tTelefone: {self._fone}"
 
-    def set_id(self,id):
-        if not isinstance(id, int): raise ValueError("ID invalido")
-        if (id <= 0): raise ValueError("ID invalido")
+    def set_id(self, id):
+        if not isinstance(id, int): raise ValueError("\nID inválido, informe outro número.")
+        if (id <= 0): raise ValueError("ID inválido")
         self._id = id
     
-    def set_nome(self,n):
+    def set_nome(self, n):
         if (n == ""): raise ValueError("O campo nome precisa ser preenchido") 
         self._nome = n
 
@@ -29,7 +29,7 @@ class Cliente:
         if (e == ""): raise ValueError("O campo e-mail precisa ser preenchido")
         self._email = e
     
-    def set_email(self, f):
+    def set_fone(self, f):
         if (f == ""): raise ValueError("O campo fone precisa ser preenchido")
         self._fone = f
     
